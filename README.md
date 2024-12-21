@@ -17,3 +17,7 @@ Discuss more about your honeypot. Use chatgpt to make a detailed objective.
 
 ## Steps
 use screenshots or use imgur and reference the screenshots (use imgsrc if using imgur).
+
+All screenshots need a description of what the screenshot is about
+
+Ref 1: Honeypot
