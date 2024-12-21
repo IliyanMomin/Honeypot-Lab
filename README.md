@@ -1,4 +1,4 @@
-# Honeypot-Lab
+# Honeypot Lab
 
 ## Objective
 
