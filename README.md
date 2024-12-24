@@ -20,7 +20,7 @@ These are the steps to create a vulnerable system.
 
 ### 1.Updating the Operating System
 <p>
-    We can update our OS by doing this command.
+    We need to update our OS by doing this command.
 </p>
 <div>
 <a href="https://postimg.cc/KKL91jtZ">
@@ -33,3 +33,8 @@ These are the steps to create a vulnerable system.
         Keeping your system updated with the latest patches is essential to prevent attackers from exploiting vulnerabilities during the setup process. Regular updates enhance the security and stability of your honeypot environment.
     </p>
 </div>
+
+### 2.Installing our Honeypot Tool
+<p>
+   Now installing the Honeypot tool is easy! The tool we will use is Cowrie and we need to first pull it from GitHub.
+</p>
