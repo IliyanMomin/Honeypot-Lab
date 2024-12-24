@@ -2,8 +2,7 @@
 
 ## Objective
 
-Discuss more about your honeypot. Use chatgpt to make a detailed objective. 
-
+Setting up a honeypot on Ubuntu is a great way to learn about cyberattacks by creating a fake system that looks vulnerable. This fake system attracts attackers, which security teams can watch the attackers actions, what tools they use, and why they're attacking. The information gathered helps improve cyber defense, protect real systems, and stay ahead of potential threats, all while keeping the actual network safe. 
 
 ### Skills Learned
 
