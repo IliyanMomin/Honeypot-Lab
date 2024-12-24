@@ -15,8 +15,11 @@ Setting up a honeypot on Ubuntu is a great way to learn about cyberattacks by cr
 - List the tools and what you did with it.
 
 ## Steps
-use screenshots or use imgur and reference the screenshots (use imgsrc if using imgur).
 
-All screenshots need a description of what the screenshot is about
+These are the steps to create a vulnerable system.
 
-Ref 1: Honeypot
+### Updating the Operating System
+
+<img src="https://ibb.co/NS1z8G4" alt="Updating the Operating System">
+
+Keeping your system updated with the latest patches is essential to prevent attackers from exploiting vulnerabilities during the setup process. Regular updates enhance the security and stability of your honeypot environment.
