@@ -16,7 +16,7 @@ Setting up a honeypot on Ubuntu is a great way to learn about cyberattacks by cr
 
 ## Steps
 
-These are the steps to create a vulnerable system.
+These are the steps to create a vulnerable system to trick attackers.
 
 ### 1.Updating the Operating System
 <p>
