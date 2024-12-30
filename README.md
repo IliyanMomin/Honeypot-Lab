@@ -1,4 +1,4 @@
-# Honeypot Lab
+# Honeypot Lab (in progress.)
 
 ## Objective
 
@@ -156,3 +156,8 @@ pip install -r requirements.txt</code></pre>
     "Fake confidential information"
     </p>
 </a>
+
+### 5.Attacking the Honeypot
+<p>
+    Let's now attack our honeypot by using Kali Linux! 
+</p>
