@@ -161,3 +161,19 @@ pip install -r requirements.txt</code></pre>
 <p>
     Let's now attack our honeypot by using Kali Linux! 
 </p>
+<ol>
+    <li>
+        Before we do we must figure out the honeypots IP address on the Ubuntu system. I won't show you the IP for obvious reasons but this is the command
+        <pre><code>ip addr</code></pre>
+    </li>
+    <li>
+        We will also use the command we did to monitor our log files in real time
+        <pre><code>tail -f var/log/cowrie/cowrie.log</code></pre>
+    </li>
+    <li>
+        We will now hop onto our Kali Linux system to perform an SSH login. 
+        <pre><code>ssh root@(honeypot_ip) -p 2222</code></pre>
+        You can find the password by doing <pre><code>cat userdb.example</code></pre>
+    </li>
+    
+</ol>
