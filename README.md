@@ -20,12 +20,23 @@ These are the steps to create a vulnerable system to trick attackers.
 
 ### 1.Updating the Operating System
 <p>
-    We need to update our OS by doing this command.
+    We need to update our OS by doing this command. 
 </p>
 <div>
-<a href="https://postimg.cc/KKL91jtZ">
+<a href="https://postimg.cc/v4Qh8FYx">
     <p>
-    "sudo apt update && sudo apt upgrade -y".
+    "sudo apt-get update".
+    </p>
+<div>
+    <p>
+    We will also install the python dependencies.
+</p>
+      <p>
+        I showed the proof I already installed it but when you first do it you will get something else and it'll be much longer.
+    </p>
+<a href="https://postimg.cc/tZVwdQVC">
+    <p>
+    "sudo apt-get install git python3-venv libssl-dev libffi-dev build-essential libpython3-dev python3-minimal authbind".
     </p>
 </a>
 </div>
@@ -34,7 +45,10 @@ These are the steps to create a vulnerable system to trick attackers.
     </p>
 </div>
 
-### 2.Installing our Honeypot Tool
+### 2.Making a User.
+
+
+### 3.Installing our Honeypot Tool
 <p>
    Now installing the Honeypot tool is easy! The tool we will use is Cowrie and we need to first pull it from GitHub.
 </p>
