@@ -46,10 +46,20 @@ These are the steps to create a vulnerable system to trick attackers.
 </div>
 
 ### 2.Making a User.
-<p>
-    We need to make our own user for security purposes.
-</p>
-
+ <p>
+    We need to make our own user for security purposes. This is the user we will be when installing Cowrie.
+ </p>
+<div>
+<a href="https://postimg.cc/2qcPvvtR"> 
+    <p>
+    "sudo adduser --disabled-password cowrie".
+    </p>
+    <p>
+    "sudo su - cowrie"
+    </p>
+</a>
+</div>
+    
 ### 3.Installing our Honeypot Tool
 <p>
    Now installing the Honeypot tool is easy! The tool we will use is Cowrie and we need to first pull it from GitHub.
