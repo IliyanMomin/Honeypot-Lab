@@ -58,6 +58,9 @@ These are the steps to create a vulnerable system to trick attackers.
     "sudo su - cowrie"
     </p>
 </a>
+    <p>
+        Creating a dedicated Cowrie user enhances security by limiting its permissions and isolating it from critical system processes. This follows the principle of least privilege, ensuring that even if Cowrie is compromised, the impact is contained to the cowrie user environment. Running Cowrie as a non-root user reduces security risks and aligns with best practices for safeguarding the system.
+    </p>
 </div>
     
 ### 3.Installing our Honeypot Tool
