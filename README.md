@@ -68,13 +68,13 @@ These are the steps to create a vulnerable system to trick attackers.
    Now installing the Honeypot tool is easy! The tool we will use is Cowrie and we need to first pull it from GitHub.
 </p>
 <div>
-<a href="https://postimg.cc/yJQh1WNR">
+<a href="https://postimg.cc/ftmWKD0v">
     <p>
-    "sudo apt install python3-pip git -y".
+    "git clone http://github.com/cowrie/cowrie".
     </p>
 </a>
 <p>
-        First we need to install git in our OS with python3. Our honeypot Cowrie and its dependencies rely on python3. 
+        We will also set up the virtual environment for our Honeypot.
     </p>
 </div>
 <div>
@@ -83,20 +83,6 @@ These are the steps to create a vulnerable system to trick attackers.
     "git clone https://github.com/cowrie/cowrie.git".
     </p>
 </a>
-<p>
-        Second we will clone the Cowrie Git repository (you must type in the link, you cannot copy and paste unfortunately) We now have Cowrie on our Ubuntu Machine. 
-    </p>
-</div>
-<div>
-<a href="https://postimg.cc/rzhBB9cy">
-    <p>
-    "./bin/cowrie start".
-    </p>
-</a>
-<p>
-        Now lastly we will now start cowrie. If bin/cowrie is not found, you will need to make sure Cowrie is still there by doing the "ls" command. If Cowrie is there then you will need to cd to cowrie and install python3 there. Then you must install the source code for Cowrie and install the upgrade and the requirements. Then you can configure it and now start Cowrie. 
-    </p>
-    <p>These are the commands you'll need to type if bin/cowrie wasn't found.</p>
     <ol>
   <li>
     Install dependencies:
