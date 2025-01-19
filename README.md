@@ -46,7 +46,9 @@ These are the steps to create a vulnerable system to trick attackers.
 </div>
 
 ### 2.Making a User.
-
+<p>
+    We need to make our own user for security purposes.
+</p>
 
 ### 3.Installing our Honeypot Tool
 <p>
