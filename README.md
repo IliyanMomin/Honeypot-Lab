@@ -30,6 +30,7 @@ These are the steps to create a vulnerable system to trick attackers.
 <div>
     <p>
     We will also install the python dependencies.
+        <li>apt install python3.11-venv</li>
 </p>
       <p>
         I showed the proof I already installed it but when you first do it you will get something else and it'll be much longer.
