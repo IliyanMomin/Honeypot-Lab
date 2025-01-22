@@ -135,4 +135,48 @@ pip install -r requirements.txt</code></pre>
         We enabled Telnet through the cfg file.
     </p>
 </div>
+
+### 3.Adding a Password
+<p>
+   We will now configure the Cowrie rules. This will be configured on the .cfg file
+</p>
+    <div>
+<a href="https://postimg.cc/2qPjDnqv">
+    <p>
+    "user:x:password".
+    </p>
+</a>
+<p>
+    That's how the username and password is set up. X is not used as anything.
+</p>
+    </div>
+    <p>We will now make our own text file with a username and password.</p>
+    <ol>
+        <li>
+            <pre><code>touch /home/cowrie/cowrie/etc/userdb.txt</code></pre>
+        </li>
+        <li>
+            We create the .txt file.
+            <pre><code>touch userdb.txt</code></pre>
+        </li>
+        <li>
+            Lets now add some content to the .txt file.
+            <pre><code>nano userdb.txt</code></pre>
+            Once you get into the file.
+            <pre><code>root:x:pass</code></pre>
+        </li>
+    </ol>
+    
+### 4.Start Your Engines!!!
+<p>
+   We will now start Cowrie!
+</p>
 <div>
+    <a href="https://postimg.cc/B8qvqR00">
+    <p>
+    "bin/cowrie start".
+    </p>
+    </a>
+    <p>For proof if it's running it'll say another twistd server is running, PID ####</p>
+    <p>To stop the process "bin/cowrie stop"</p>
+</div>
