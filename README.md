@@ -180,3 +180,59 @@ pip install -r requirements.txt</code></pre>
     <p>For proof if it's running it'll say another twistd server is running, PID ####</p>
     <p>To stop the process "bin/cowrie stop"</p>
 </div>
+<p>
+   We can examine what occurs in the log file.
+</p>
+<div>
+    <a href="https://postimg.cc/qggKPPkm">
+    <p>
+    "bin/cowrie start".
+    </p>
+    </a>
+    <p>Honeypot log files, like those from Cowrie, capture and analyze attacker behavior, including login attempts, commands executed, and files uploaded. They help researchers and security teams understand emerging threats, identify attack patterns, and improve defenses by providing insights into attacker tactics and vulnerabilities targeted. Logs also aid in forensics, malware analysis, and strengthening intrusion detection systems.</p>
+</div>
+
+### 5.Installing and configuring the Splunk universal forwarder
+<p>Installing the Splunk Universal Forwarder on your Cowrie server enables use to make the honeypot logs actionable and meaningful within Splunk. This enhances the ability to detect threats, understand attacker behavior, and improve overall security posture.</p>
+<p>
+    But before we start we must open necessary ports on our cowrie box.
+</p>
+<ol>
+    <li>Port 22: For SSH access (important for Cowrie honeypot functionality).</li>
+    <li>Port 80: For HTTP traffic (if Splunk Web or other tools require this).</li>
+    <li>Port 443: For HTTPS traffic (encrypted communication with Splunk or other tools).</li>
+    <li>Port 9997: Used by Splunk Universal Forwarder to send logs to the Splunk indexer.</li>
+    <li>Port 8088: For Splunk HTTP Event Collector (HEC), if you plan to use it.</li>
+    <li>Port 8090: For Splunk management or other specific services.</li>
+</ol>
+<p>This is how we put the commands.</p>
+<ol>
+    <pre><code>iptables -A INPUT -p tcp --dport 22 -j ACCEPT 
+iptables -A INPUT -p tcp --dport 80 -j ACCEPT  
+iptables -A INPUT -p tcp --dport 443 -j ACCEPT  
+iptables -A INPUT -p tcp --dport 9997 -j ACCEPT 
+iptables -A INPUT -p tcp --dport 8088 -j ACCEPT  
+iptables -A INPUT -p tcp --dport 8090 -j ACCEPT</code></pre>
+</ol>
+<div>
+    <a href="https://postimg.cc/Ffts1hHD">
+    <p>
+    "sudo iptables-save | sudo tee /etc/network/iptables.rules".
+    </p>
+    </a>
+    <p>This shows that the inputs on those ports are now accepted.</p>
+</div>
+<p>
+    We will now add Splunk and its packages into the cowrie server.
+</p>
+<ol>
+    <li><pre><code>sudo useradd -m splunk</code></pre></li>
+    <li><pre><code>sudo mkdir /opt/splunkforwarder/</code></pre></li>
+    <li><pre><code>chown -R splunk:splunk /opt/splunkforwarder</code></pre></li>
+    <li><pre><code>su - splunk</code></pre></li>
+    <li><pre><code>chown -R splunk:splunk /opt/splunkforwarder</code></pre></li>
+    <li><pre><code>wget -O splunkforwarder-9.2.0.1-d8ae995bf219-linux-2.6-amd64.deb "https://download.splunk.com/products/universalforwarder/releases/9.2.0.1/linux/splunkforwarder-9.2.0.1-d8ae995bf219-linux-2.6-amd64.deb"</code></pre></li>
+    <li><pre><code>wget -O splunkforwarder-9.2.0.1-d8ae995bf219-linux-2.6-amd64.deb "https://download.splunk.com/products/universalforwarder/releases/9.2.0.1/linux/splunkforwarder-9.2.0.1-d8ae995bf219-linux-2.6-amd64.deb"</code></pre></li>
+   <li><pre><code>sudo /opt/splunkforwarder/bin/splunk start --accept-license</code></pre></li>
+   <li><pre><code>cd /opt/splunkforwarder/bin</code></pre></li>
+</ol>
