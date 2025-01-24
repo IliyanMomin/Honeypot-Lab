@@ -236,3 +236,33 @@ iptables -A INPUT -p tcp --dport 8090 -j ACCEPT</code></pre>
    <li><pre><code>sudo /opt/splunkforwarder/bin/splunk start --accept-license</code></pre></li>
    <li><pre><code>cd /opt/splunkforwarder/bin</code></pre></li>
 </ol>
+<div>
+    <a href="https://postimg.cc/F71ZGvnQ">
+    <p>
+    This is what should be shown if you did this correctly.
+    </p>
+    </a>
+</div>
+<ol>
+    <p>This is how to stop Splunk.</p>
+    <li><pre><code>/opt/splunkforwarder/bin/splunk stop</code></pre></li>
+    <p>Splunk will automatically start on boot.</p>
+    <li><pre><code>./splunk enable boot-start -user splunk</code></pre></li>
+    <p>This is to run the service again.</p>
+    <li><pre><code>sudo /opt/splunkforwarder/bin/splunk start</code></pre></li>
+</ol>
+<div>
+    <a href="https://postimg.cc/hz8r3Fwb">
+    <p>
+    You'll get this message if you successfully start splunk.
+    </p>
+    </a>
+</div>
+<div>
+    <a href="https://postimg.cc/JG9WLZ06">
+    <p>
+    ./splunk add forward-server 11.12.13.14:9997
+    </p>
+    </a>
+    <p>This command configures a Splunk Universal Forwarder to send collected data to a Splunk indexer at IP 11.12.13.14 on port 9997.</p>
+</div>
