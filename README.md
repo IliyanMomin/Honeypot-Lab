@@ -266,3 +266,13 @@ iptables -A INPUT -p tcp --dport 8090 -j ACCEPT</code></pre>
     </a>
     <p>This command configures a Splunk Universal Forwarder to send collected data to a Splunk indexer at IP 11.12.13.14 on port 9997.</p>
 </div>
+<ol>
+    <p>We will now add the monitor and for this we had a step making our own username and password. We will monitor the json log file.</p>
+    <li>./splunk add monitor -auth username:<your password> /home/cowrie/cowrie/var/log/cowrie/cowrie.json</li>
+    </ol>
+<p>We now need to install the Splunk universal forwarder.</p>
+<a href="https://www.splunk.com/en_us/download/universal-forwarder/thank-you-universalforwarder.html">
+  <img src="https://img.shields.io/badge/-Splunk%20Universal%20Forwarder-FF5733?&style=for-the-badge&logo=splunk&logoColor=white" />
+</a>
+
+### 5 Attacking the System
